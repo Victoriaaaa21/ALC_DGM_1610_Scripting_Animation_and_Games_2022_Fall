@@ -9,10 +9,13 @@ public class PlayerMovement : MonoBehaviour
     public float rotSpeed; // Rotation speed
     public float hInput; // horizontal input
     public float vInput; // vertical input
+    public float jumpForce; // Jump height
+    public Rigidbody playerRB; // Reference Rigidbody component
 
     // Update is called once per frame
     void Update()
-    {   // Collect Input values from keyboard
+    {   
+        // Collect Input values from keyboard
         hInput = Input.GetAxis("Horizontal");
         vInput = Input.GetAxis("Vertical");
     
@@ -23,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(Vector3.forward *speed* vInput * Time.deltaTime);
         // Forward and Backward movement
-
+        if(Input.GetKeyDown(KeyCode.Space)) // Checks for space bar press
+            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Makes player jump, ForceMode.Impulse gives it full force
     }
 }
