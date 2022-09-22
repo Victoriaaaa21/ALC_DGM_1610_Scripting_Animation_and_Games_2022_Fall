@@ -24,6 +24,6 @@ public class SpawnManager : MonoBehaviour
         int balloonIndex = Random.Range(0,balloonPrefabs.Length);
 
         //Spawn random balloon at spawn position
-        Instantiate(balloonPrefabs[balloonIndex],spawnPos,balloonPrefabs[balloonIndex],Transform.rotation);
+        Instantiate(balloonPrefabs[balloonIndex],spawnPos,balloonPrefabs[balloonIndex].transform.rotation);
     } 
 }

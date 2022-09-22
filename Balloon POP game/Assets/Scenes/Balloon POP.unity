@@ -530,7 +530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 7, z: -15}
+  m_LocalPosition: {x: 0, y: 7.18, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -546,6 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094866317}
+  - component: {fileID: 1094866318}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -568,6 +569,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094866318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094866316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365669a230a11461786b02a2082322f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloonPrefabs:
+  - {fileID: 2414098009031366927, guid: a9274c592e27148a999f1813567194b2, type: 3}
+  - {fileID: 770492947768201056, guid: ac2ef437f8eb042d7b13e72fbd7a1897, type: 3}
+  - {fileID: 1169412465440662827, guid: 815e7b52037eb4ea59eb65522c39080f, type: 3}
+  - {fileID: 6908701609200000419, guid: 4c4a38b8eb1624b48ae2e8b2927b5e18, type: 3}
+  startDelay: 0.5
+  spawnInterval: 1.5
+  xRange: 10
 --- !u!1 &1462653886
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2035749790}
+  - component: {fileID: 2035749791}
   m_Layer: 0
   m_Name: ScoreManager
   m_TagString: Untagged
@@ -660,10 +682,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035749789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.9, y: 3.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2035749791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035749789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d1f3c43b36b4869bec871e6b141273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 692703981}

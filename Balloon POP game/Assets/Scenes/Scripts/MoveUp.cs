@@ -6,8 +6,8 @@ public class MoveUp : MonoBehaviour
 {
     public float moveSpeed = 1.0f; // How fast its going up
     public float upperBound = 25.0f; //Upper limit if reaches looses points
+    
     private Balloon balloon;
-
     private ScoreManager scoreManager; //A variable to reference the ScoreManager
 
     // Start is called before the first frame update
