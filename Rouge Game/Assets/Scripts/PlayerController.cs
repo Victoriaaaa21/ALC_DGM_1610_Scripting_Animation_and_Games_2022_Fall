@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControler : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed;  // How fast the player moves
     private float hInput; // Horizontal input
@@ -21,7 +21,7 @@ public class PlayerControler : MonoBehaviour
         hInput = Input.GetAxis("Horizontal");
         vInput = Input.GetAxis("Vertical");
 
-        transform.translate(Vector2.right * hInput * speed * Time.deltaTime); // Move left and right
-        transform.translate(Vector2.up* vInput * speed * Time.deltaTime); // Move forward and backwards
+        transform.Translate(Vector2.right * hInput * speed * Time.deltaTime); // Move left and right
+        transform.Translate(Vector2.up* vInput * speed * Time.deltaTime); // Move forward and backwards
     }
 }
