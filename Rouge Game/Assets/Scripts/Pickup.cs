@@ -6,7 +6,8 @@ public class Pickup : MonoBehaviour
 {
     public string name;
     public string typeOfPickup;
-    public string description;
+    public string description; 
+    public string effect;
 
     public int amount; // How many of the pickups 
     public int value; // If selling or buying what is the value
