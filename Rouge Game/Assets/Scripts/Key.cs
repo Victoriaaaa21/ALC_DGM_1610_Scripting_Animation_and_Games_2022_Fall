@@ -12,13 +12,6 @@ private GameManager gm;
         gm = GameObject.Find("GameManager").GetComponent<GameManager>(); //Using the game object game manager and refrencing GameManager script 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Player"))
