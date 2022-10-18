@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int Key;
-    public int Scroll;
+    public int Scroll; //Declares an variable
     
 
 
