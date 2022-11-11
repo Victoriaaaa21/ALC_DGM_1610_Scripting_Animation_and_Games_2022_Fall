@@ -16,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if(attackDelay <= 0)
         {
-            if(Input.GetKey(KeyCode.Space))
+            if(Input.GetKey(KeyCode.F))
             {
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
 
@@ -38,11 +38,5 @@ public class PlayerAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
