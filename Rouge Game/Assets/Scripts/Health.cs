@@ -24,7 +24,7 @@ public class Health : MonoBehaviour
         {
             Debug.Log("Player has Died! Game Over!");
             Time.timeScale = 0f;
-            Destroy(gameObject,deathDelay);
+            //Destroy(gameObject,deathDelay);
         }
     }
     public void AddHealth(int healAmount)

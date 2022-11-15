@@ -35,6 +35,7 @@ public class Projectile : MonoBehaviour
         if(other.CompareTag("Player")) //Destroy projectile if it hits the player
         {
             DestroyProjectile();
+            playerHealth.TakeDamage(damage);
         }
     }
 

@@ -17,11 +17,11 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int dmgAmount)
     {
         currentHealth -= dmgAmount; //Take away a certain amount of helath
-        Debug.Log("Enemies Health =" + currentHealth);
+        Debug.Log("Enemies Health = " + currentHealth);
 
         if(currentHealth <= 0) //check to see if the enemy has expired 
         {
-            Debug.Log("Emeny has Died!");
+            Debug.Log("Enemy has Died!");
             Destroy(gameObject,deathDelay);
         }
     }
