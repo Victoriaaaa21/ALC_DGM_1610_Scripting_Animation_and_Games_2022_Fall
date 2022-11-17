@@ -11,8 +11,7 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public int damage; 
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         if(attackDelay <= 0)
         {
